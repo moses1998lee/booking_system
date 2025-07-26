@@ -1,0 +1,36 @@
+.button {
+    /* basic look */
+    padding: 8px 16px;
+    /* space around text */
+    background: #0554ff;
+    /* solid blue */
+    color: #f1edff;
+    /* white text */
+
+    /* minor polish */
+    border: none;
+    /* remove default border */
+    border-radius: 6px;
+    /* slightly rounded corners */
+    cursor: pointer;
+    /* hand cursor */
+    font-size: 1rem;
+    /* inherit default font size */
+}
+
+/* hover = a bit darker */
+.button:hover {
+    background: #000000;
+    color: #ffffff
+}
+
+/* pressed = a bit darker still */
+.button:active {
+    background: #234dd1;
+}
+
+/* disabled = greyed out and not clickable */
+.button:disabled {
+    background: #9cb5ff;
+    cursor: not-allowed;
+}

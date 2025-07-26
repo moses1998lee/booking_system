@@ -1,4 +1,5 @@
 import type React from "react";
+import styles from './Button.module.css';
 
 interface ButtonProps {
   onClick?: (value: React.ReactNode) => void;
@@ -6,6 +7,7 @@ interface ButtonProps {
 }
 
 export default function Button({ onClick, children }: ButtonProps) {
+  const cls = `${styles.button}`;
   const handleClick = () => {
     if (onClick) {
       onClick(children);
@@ -13,7 +15,7 @@ export default function Button({ onClick, children }: ButtonProps) {
   };
   return (
     <button
-      className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded"
+      className={cls}
       onClick={handleClick}
     >
       {children}

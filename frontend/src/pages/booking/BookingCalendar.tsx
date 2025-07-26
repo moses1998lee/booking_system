@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { fetchTimeSlots } from "../../api/index";
-import Button from "../../components/button";
+import Button from "../../components/Button";
 import { pushBooking } from "../../api/booking";
 
 export default function BookingCalendar() {
